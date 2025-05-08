@@ -1,0 +1,79 @@
+body {
+    padding: 1rem;
+    background: #00058c;
+    background: linear-gradient(148deg,rgba(0, 5, 140, 1) 0%, rgba(0, 135, 124, 1) 50%, rgba(150, 0, 140, 1) 100%);
+    width: 100%;
+    height: max-content;
+    color: white
+}
+
+div {
+    border-radius: 12px;
+}
+
+.head-title{
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black,
+    -2px -2px 0 rgb(37, 204, 255),
+     2px -2px 0 rgb(37, 204, 255),
+    -2px  2px 0 rgb(37, 204, 255),
+     2px  2px 0 rgb(37, 204, 255);
+     
+}
+
+.label{
+    position: absolute;
+    top: -1em;
+    left: 10%;
+    font-style: italic;
+    padding: 0 5px;
+    font-size: 0.9em;
+}
+
+
+.label-module{
+    background-color: rgb(46, 0, 114);
+    border: 2px solid white;
+    color: white;
+}
+
+.label-item{
+    background-color: rgb(0, 201, 27);
+    border: 2px solid white;
+    color: white;
+}
+
+.template {
+    position: relative;
+    padding: 4px;
+    background: rgba(157, 0, 160, 0.256); /* белый с прозрачностью */
+    backdrop-filter: blur(5px);          /* эффект стекла */
+    padding: 20px;
+    /* border: 1px solid white; */
+    color: white;
+    transition: all 500ms ease-in-out;
+}
+
+.template::after {
+    position: absolute;
+    content: 'описание';
+    top: -0.5rem;
+    right: 20%;
+    font-size: 0.6rem;
+    font-style: italic;
+    padding: 2px;
+    
+}
+
+.template:hover{
+    border: 1px solid white;
+    border-radius: 16px 10px; 
+}
+
+.template:hover::after{
+    background-color: white;
+    color: black;
+}
